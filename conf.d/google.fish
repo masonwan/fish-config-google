@@ -1,12 +1,6 @@
 # The following is standard for Google. However, it causes the Terminal to run unbearably slow.                                                                                                                                                        [0/0]
 # source /google/data/ro/teams/fish/google.fish
 
-function proxy_call
-  set -l cmd $argv
-  log info $cmd
-  eval $cmd
-end
-
 ## Copy the last command to clipboard
 alias copy-last "history | head -1 | tr -d '\n' | xclip -in -selection clipboard"
 
@@ -26,27 +20,17 @@ abbr --add irbb iblaze build -iblaze_blaze_binary rabbit
 
 # Borg
 
-function bu -d 'borgcfg up'
-  buc $argv --skip_confirmation
-end
-
-function buc -d 'borgcfg up'
-  proxy_call "borgcfg $argv[1] up $argv[2..-1]"
-end
-
-function bp -d 'Borg config print'
-  proxy_call "borgcfg $argv[1] print $argv[2..-1]"
-end
+abbr --add bu borgcfg /path/to/borg up --skip_confirmation
+abbr --add buc borgcfg /path/to/borg up
+abbr --add bp borgcfg /path/to/borg print
 
 # Fileutils
 
-abbr --add flsl fileutil --gfs_user=commerce-sameday-delivery-logs ls -a -lh
+abbr --add flsl fileutil --gfs_user=user ls -a -lh
 abbr --add fls fileutil ls -a -lh
-abbr --add frm fileutil rm -R
 
 # Piper
 
-abbr --add pg p4 g4d
 abbr --add gocloud /google/src/cloud/$USER
 abbr --add gohead /google/src/head/depot/google3/
 
