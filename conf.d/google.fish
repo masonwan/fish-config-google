@@ -63,3 +63,13 @@ function try-until-succeed -d "Try a command until it exits with code 0"
     sleep 1
   end
 end
+
+# HG
+
+function hg-empty-commit -d 'Creat an empty commit with hg'
+  touch tmp
+  hg add tmp
+  hg commit -m 'tmp'
+  hg rm tmp
+  hg commit --amend -m $argv[1]
+end
