@@ -42,15 +42,14 @@ alias plxutil /google/data/ro/teams/plx/plxutil
 
 set -gx PATH $PATH $HOME/.bin
 
-# Auto re-new prodaccess
-
-# http://go/fish-shell#enable-proper-stty-settings-at-startup
-if status --is-interactive
-  echo 'Checking certification status (+8h before expiration)...'
-  if not gcertstatus -check_remaining=8h -quiet
-    gcert -prodssh=true
-  end
-end
+# # Auto re-new prodaccess
+# # http://go/fish-shell#enable-proper-stty-settings-at-startup
+# if status --is-interactive
+#   echo 'Checking certification status (+8h before expiration)...'
+#   if not gcertstatus -check_remaining=8h -quiet
+#     gcert -prodssh=true
+#   end
+# end
 
 function try-until-succeed -d "Try a command until it exits with code 0"
   while true
