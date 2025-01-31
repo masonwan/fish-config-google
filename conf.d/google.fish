@@ -15,8 +15,11 @@ abbr --add bt blaze test
 abbr --add ibt iblaze test
 abbr --add bm blaze mpm --stamp --mpm_build_arg="--label=$USER"
 abbr --add rbb rabbit --verifiable build
+abbr --add rbt rabbit --verifiable test
+abbr --add rbc rabbit --verifiable coverage
 abbr --add rbm rabbit --verifiable mpm --mpm_build_arg="--label=$USER"
 abbr --add irbb iblaze build -iblaze_blaze_binary rabbit
+abbr --add irbc iblaze coverage -iblaze_blaze_binary rabbit
 
 # Borg
 
