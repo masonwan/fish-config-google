@@ -20,6 +20,7 @@ abbr --add rbc rabbit --verifiable coverage
 abbr --add rbm rabbit --verifiable mpm --mpm_build_arg="--label=$USER"
 abbr --add irbb iblaze build -iblaze_blaze_binary rabbit
 abbr --add irbc iblaze coverage -iblaze_blaze_binary rabbit
+abbr --add :af /google/bin/releases/depserver-contrib-tools/affected_targets/affected_targets --test # List affected Blaze test targets. Remove `--test` for non-test targets.
 
 # Borg
 
