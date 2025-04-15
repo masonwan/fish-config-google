@@ -35,7 +35,7 @@ abbr --add fls fileutil ls -a -lh
 
 # Piper
 
-abbr --add gocloud /google/src/cloud/$USER
+abbr --add gocloud /google/src/cloud/$USER && s
 abbr --add gohead /google/src/head/depot/google3/
 
 # Plx
