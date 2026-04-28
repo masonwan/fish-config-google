@@ -42,6 +42,10 @@ abbr --add gohead "/google/src/head/depot/google3/ && s"
 
 alias plxutil /google/data/ro/teams/plx/plxutil
 
+# Gemini CLI
+
+abbr --add gemini "/google/bin/releases/gemini-cli/tools/gemini"
+
 # Add additional execution to the path.
 
 set -gx PATH $PATH $HOME/.bin
