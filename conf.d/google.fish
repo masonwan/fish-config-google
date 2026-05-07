@@ -42,7 +42,7 @@ abbr --add gohead "/google/src/head/depot/google3/ && s"
 
 alias plxutil /google/data/ro/teams/plx/plxutil
 
-# Gemini CLI
+# JetSki CLI
 
 abbr --add jetski "/google/bin/releases/jetski-devs/tools/cli"
 
