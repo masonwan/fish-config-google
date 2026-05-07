@@ -44,7 +44,7 @@ alias plxutil /google/data/ro/teams/plx/plxutil
 
 # Gemini CLI
 
-abbr --add gemini "/google/bin/releases/gemini-cli/tools/gemini"
+abbr --add jetski "/google/bin/releases/jetski-devs/tools/cli"
 
 # Add additional execution to the path.
 
