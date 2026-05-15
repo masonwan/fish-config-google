@@ -42,9 +42,10 @@ abbr --add gohead "/google/src/head/depot/google3/ && s"
 
 alias plxutil /google/data/ro/teams/plx/plxutil
 
-# JetSki CLI
+# JetSki
 
 abbr --add jetski-cli "/google/bin/releases/jetski-devs/tools/cli"
+abbr --add jetski "/google/bin/releases/jetski-devs/jetski-web/run_jetski.par"
 
 # Add additional execution to the path.
 
