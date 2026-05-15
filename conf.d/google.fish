@@ -44,7 +44,7 @@ alias plxutil /google/data/ro/teams/plx/plxutil
 
 # JetSki CLI
 
-abbr --add jetski "/google/bin/releases/jetski-devs/tools/cli"
+abbr --add jetski-cli "/google/bin/releases/jetski-devs/tools/cli"
 
 # Add additional execution to the path.
 
